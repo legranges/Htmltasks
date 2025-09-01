@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        input, select, textarea {
+            margin-bottom: 10px;
+        }
+    </style>
+    
+
 </head>
 <body>
     <form>
@@ -27,8 +43,70 @@
         <span>(only 10 digits)</span>
         <br><br>
         
-      
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="fe-male">Fe-Male <br><br>
 
-    </form>
+        
+        <label for="Address">Address :</label>
+        <textarea id="Address" name="Address" rows="4" cols="50" placeholder="Enter your full address"></textarea> <br><br>
+
+
+        <label for="city">city:</label>
+        <input type="text" id="city" maxlength="50">
+        <span>(Max 50charecters Allowed)</span><br><br>
+
+        <label for="pincode">pincode :</label>
+        <input type="number" id="pincode" maxlength="50">
+        <span>(Max 6charecters Allowed)</span><br><br>
+
+
+        <label for="State">state :</label>
+        <input type="text" id="state" maxlength="50">
+        <span>(Max 50 charecters Allowed)</span><br><br>
+
+        <label for="counrty">Country</label>
+        <input type="country" id="country" maxlength="50">
+        <span>(Max 50 charecters allowed)</span><br><br>
+
+        <label>Hobbies</label>
+        <input type="checkbox" id="drawing" name="hobby" value="drawing">
+        <label for="drawing">Drawing</label>
+
+        <input type="checkbox" id="singing" name="hobby" value="singing">
+        <label for="singing">singing</label>
+
+          <input type="checkbox" id="painting" name="hobby" value="painting">
+        <label for="painting">painting</label>
+
+          <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">reading</label><br><br>
+
+    
+        <label for="Qualification">Qualification</label>
+        <input type="checkbox" id="High School" name="Qualification" value="high school">
+
+        <label for="HigherSchool">HigherSchool</label>
+        <input type="checkbox" id="HigherSchool" name="Qualification" value="higherschool">
+
+        <label for="graduation">Graduarion</label>
+        <input type="checkbox" id="graduation" name="Qualification" value="graduation">
+
+        <label for="post graduation">post graduation</label>
+        <input type="checkbox" id="post graduation" name="Qualification" value="post graduation"><br><br>
+
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+       
+
+
+        
+
+
+        
+
+
+
+        </form>
 </body>
 </html>
